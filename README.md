@@ -2,7 +2,7 @@ Aim of the project :
 -------------------
 The major aim of this project is to gain insight into the revenue data to understand the different factors that affect sales of the different branches.
 
-Analysis List
+Analysis List :
 --------------
 1. Product Analysis: 
 Conduct analysis on the data to understand the different product lines, the products lines performing best and the product lines that need to be improved.
@@ -13,7 +13,7 @@ This analysis aims to answer the question of the sales trends of product. The re
 3. Customer Analysis: 
 This analysis aims to uncover the different customers segments, purchase trends and the profitability of each customer segment.
 
-Approach Used
+Approach Used :
 -------------
 Data Wrangling: This is the first step where inspection of data is done to make sure NULL values and missing values are detected and data replacement methods are used to replace, missing or NULL values.
  1. Build a database
