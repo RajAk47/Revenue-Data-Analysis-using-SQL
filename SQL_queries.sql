@@ -103,15 +103,16 @@ FROM sales;
 
 
 -- What is the most selling product line
-SELECT product_line FROM sales
-SUM(quantity) as qty,
+SELECT product_line, SUM(quantity) as qty
+FROM sales
 GROUP BY product_line
 ORDER BY qty DESC;
 
 
+
 -- What is the total revenue by month
-SELECT month_name AS month FROM sales
-SUM(total) AS total_revenue
+SELECT month_name AS month, SUM(total) AS total_revenue
+FROM sales
 GROUP BY month_name 
 ORDER BY total_revenue DESC ;
 
@@ -279,7 +280,7 @@ FROM sales
 GROUP BY day_name 
 ORDER BY avg_rating DESC;
 -- Mon, Tue and Friday are the top best days for good ratings
--- why is that the case, how many sales are made on these days?
+
 
 
 
