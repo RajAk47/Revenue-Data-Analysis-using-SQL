@@ -103,19 +103,15 @@ FROM sales;
 
 
 -- What is the most selling product line
-SELECT
-	SUM(quantity) as qty,
-    product_line
-FROM sales
+SELECT product_line FROM sales
+SUM(quantity) as qty,
 GROUP BY product_line
 ORDER BY qty DESC;
 
 
 -- What is the total revenue by month
-SELECT
-	month_name AS month,
-	SUM(total) AS total_revenue
-FROM sales
+SELECT month_name AS month FROM sales
+SUM(total) AS total_revenue
 GROUP BY month_name 
 ORDER BY total_revenue DESC ;
 
